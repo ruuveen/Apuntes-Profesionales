@@ -1,0 +1,66 @@
+Apuntes git
+
+superlog configurado en platzi
+
+git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+
+comando touch ejemplo--> touch 1.txt crea archivo en carpeta especifica de $.
+
+crea una rama llamada experimental
+git checkout -b experimental
+
+checkout ---> comando que brinca de head a head en git.
+
+para poder escribir en consola es la letra "o"
+después esc y para cerrar es ":x"
+
+Para borrar una rama
+git branch -d "nombre de rama "
+ejemplo
+git branch -d experimental
+
+AGREGAR CAMBIO A UN COMMIT EN EL TEXTO del ultimo commit
+git commit -am "texto" --amend
+
+COMANDO PARA REMOVER TODOS LOS ARCHIVOS Y SUB CARPETAS
+rm -rf ".git"---> nombre de carpeta o archivo sin comillas
+
+COMANDO PARA INICIALIZAR GIT
+git init
+
+PARA CLONAR TE POSICIONAS EN LA CARPETA DONDE DESEAR CLONAR Y COMANDO:
+
+git clone "direccion https "
+
+COMANDOS LOG
+
+git shortlog --->manda el nombre de creador y comentario
+
+CREAR REPOSITORIO GITHUB
+Crear llave ssh "poner aquí correo electrónico"
+
+
+Buscar la llave pública que se guardo en la dirección por defecto para ponerla en github, puedes verificar los directorios con:
+		ls -la
+
+
+y verificar que existe la carpeta .ssh, entramos a .ssh y verificando sus archivos examinamos el archivo (llave pública) id_rsa.pub para extraer la llave pública y dársela a github con el comando:
+
+		cat id_rsa.pub
+lo que sale (el número-te enorme) es la llave pública que colocaremos en github (Settings - SSH) para que github identifique que tenemos de alguna forma la llave privada (Guardada en el local).
+
+SUBIR A GITHUB
+
+ESTANDO EN EL DIRECTORIO / CARPETA DONDE ESTÁN NUESTROS ARCHIVOS A SUBIR:
+
+git remote add origin dirección-del-repositorio
+
+
+SEGUIDAMENTE (PARA SUBIR A GITHUB) DE:
+
+git push -u origin master
+
+
+DOCUMENTACION DE GIT PARA PROBLEMA DE ORIGEN
+
+http://es.stackoverflow.com/questions/245/cu%C3%A1l-es-la-diferencia-entre-pull-y-fetch-en-git
