@@ -64,3 +64,13 @@ git push -u origin master
 DOCUMENTACION DE GIT PARA PROBLEMA DE ORIGEN
 
 http://es.stackoverflow.com/questions/245/cu%C3%A1l-es-la-diferencia-entre-pull-y-fetch-en-git
+
+COMANDO CUANDO LOS SERVIDORES NO TIENEN INSTALADO GIT
+yum install git
+
+DESPLIEGUE A SERVIDOR
+1.-TENER ACCESO A SERVIDOR POR MEDIO DE GIT Y SERVER POR SSH
+2.-TENER ACCESO A EL AREA DE APPS DEL SERVER
+3.-HACER UN PULL A ORIGN MASTER
+
+este es el final
