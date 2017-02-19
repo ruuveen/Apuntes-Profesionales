@@ -19,6 +19,11 @@ git branch -d "nombre de rama "
 ejemplo
 git branch -d experimental
 
+FUSIONAR DOS RAMAS
+posicionado en la rama master escribir comando
+
+git merge "nombre de rama a fusionar"
+
 AGREGAR CAMBIO A UN COMMIT EN EL TEXTO del ultimo commit
 git commit -am "texto" --amend
 
