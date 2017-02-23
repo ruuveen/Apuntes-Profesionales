@@ -38,3 +38,6 @@ aling-items:center;
 flex direction:colum;
 
 }
+
+pagina de los botones  http://www.colorzilla.com/gradient-editor/
+pagina de los caracteres https://dev.w3.org/html5/html-author/charref
