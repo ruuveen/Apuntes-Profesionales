@@ -79,3 +79,48 @@ DESPLIEGUE A SERVIDOR
 3.-HACER UN PULL A ORIGN MASTER
 
 este es el final
+
+Publicar contenido en web
+1.- git checkout -b gh-pages
+2.-git push -u origin gh-pages
+borrar la publicacion.
+1.-git push origin --delete gh-pages
+
+Si normalmente desarrollamos en la rama master y queremos que los cambios que hemos hecho se publiquen en la web que genera Github con gh-pages, debemos seguir el siguiente workflow:
+
+Trabajamos con normalidad en la rama master y en algún momento decidimos subir cambios a Github:
+
+
+
+git push origin master
+
+
+A continuación, cambiamos a la rama gh-pages:
+
+
+
+git checkout gh-pages
+
+
+Mezclamos los cambios de la rama master sobre la rama gh-pages que obviamente estará desactualizada:
+
+
+
+git merge master
+
+
+Subimos los cambios a la rama gh-pahes en Github
+
+
+
+git push origin gh-pages
+
+
+Lo que acabamos de hacer es subir los cambios de la rama de desarrollo a la aplicación web en Github. A continuación, si queremos seguir desarrollando, volvemos a la rama master:
+
+
+
+git checkout master
+
+
+Y este workflow lo podemos repetir hasta el infinito

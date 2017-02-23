@@ -1,0 +1,40 @@
+COMO REFERENCIAR ARCHIVO CSS se coloca en el head
+
+<link rel="stylesheet" href="css/invie.css"/>
+
+SELECTORES
+* -----> selector universal da estilo a toda la pagina
+header----->selector de etiqueta se coloca el nombre de la etiqueta
+article h3------>se es espesifico que etiqueta se quiere afectar
+
+.----> selector de clase se define la clase y se llama con punto y nombre de la calse ejemplo
+
+.title-a{}
+
+FLEXBOX
+CREA CAJAS DENTRO DE UNA CAJA CON <DIV> EH HTML Y CSS
+EJEMPLO
+<div class ="padre">
+  <div class ="hijo"></div>
+<div class ="hijo"></div>
+<div class ="hijo"></div>
+</div>
+CSS
+.padre{
+  border :1px solid red;
+  display: flex;------->caracteritica flex
+  justify-content space-between;------>da espacio entre hijos
+  flex-wrap: wrap;----->apila los hijos
+  flex-direction: column; ----> cambia los hijos en columna
+}
+.hijo{
+width:200px;
+height:200px;
+margin:20px;
+background: green;
+border:1px solid blue;
+display:flex;----->afecta a los hijos del elemento.
+aling-items:center;
+flex direction:colum;
+
+}
